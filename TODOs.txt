@@ -1,0 +1,6 @@
+further improvement:
+    search bar functionality
+    all games subnav change to list of genres instead of platforms
+    all games page add filter and sort
+    all games page add fully functional pagination
+    auto detect card type base on card number (visa, mc, amex)

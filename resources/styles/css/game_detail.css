@@ -1,0 +1,47 @@
+/* styles applied to game detail page */
+/* reset browser default layout */
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* universal veriables */
+/* color palette */
+/* Bootstrap grey colors */
+/* font size */
+/* Bootstrap breakpionts for responsive design */
+@media screen and (min-width: 992px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+}
+.cardGame img:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #0080FF;
+}
+
+.cardGame h5 {
+  margin: 5px;
+}
+.cardGame p {
+  margin: 5px;
+}
+
+.cardGame h5:hover {
+  color: #0080FF;
+  cursor: pointer;
+}/*# sourceMappingURL=game_detail.css.map */

@@ -1,0 +1,21 @@
+/* specific styles for devices with width less than md breakpoint (768px non-inclusive) */
+
+header {
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+#navbar {
+    width: 100vw;
+}
+
+#subnav {
+    width: 100vw;
+}
+
+footer {
+    div.col-sm-3 {
+        padding-left: 1rem !important;
+    }
+}

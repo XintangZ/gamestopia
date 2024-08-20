@@ -1,0 +1,260 @@
+@import "./reset";
+@import "./variables";
+
+/* styles applied to all pages */ 
+body {
+    min-width: 320px;
+    background: $gray-200;
+}
+
+a {
+    width: fit-content;
+
+    &:hover {
+        color: $accent !important;
+    }
+}
+
+/* header */
+header {
+    display: grid;
+    place-items: center;
+
+    i {
+        color: $accent;
+        font-size: 2rem;
+    }
+
+    .dropdown-menu {
+        border-radius: 2px;
+        padding: 0;
+        min-width: fit-content;
+    }
+}
+
+/* navbar */
+nav {
+    i {
+        font-size: 1.5rem;
+        color: $gray-600;
+    }
+
+    h5 {
+        color: $accent;
+        font-weight: bold;
+    }
+
+    #navbar {
+        .container-fluid {
+            background: $primary;
+        }
+    
+        li {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .nav-link {
+            color: white;
+        }
+    }
+    
+    #subnav {
+        overflow-y: auto;
+    
+        background-color: $primary;
+        color: white;
+    
+        ul {
+            text-align: left !important;
+    
+            li {
+                margin: 0.5rem;
+            }
+        }
+    }
+}
+
+/* main */
+#main-carousel {
+    h5 {
+        text-shadow: 1px 1px black;
+    }
+
+    p {
+        font-size: 0.7rem;
+        text-shadow: 1px 1px black;
+    }
+}
+
+.heading-with-divider h4 {
+    color: $gray-800;
+    font-weight: bold;
+}
+
+#draw {
+    background-color: $gray-400;
+
+    h4 {
+        color: $accent;
+        font-weight: bold;
+    }
+
+    #prize-info {
+        h5 {
+            color: $primary;
+        }
+
+        p {
+            color: $gray-700;
+            font-size: 0.9rem;
+        }
+    }
+
+    strong {
+        font-size: 2rem;
+        color: $primary;
+    }
+
+    #draw-info {
+        h5 {
+            color: $primary;
+            font-size: 1.7rem;
+        }
+
+        p {
+            color: $accent;
+            font-size: 1.5rem;
+
+            #countdown {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.img-container {
+    height: 10rem;
+    width: 7rem;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        max-height: 10rem;
+    }
+}
+
+#allGames {
+    h5 {
+        color: $primary;
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    p {
+        color: $gray-700;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 0.5rem;
+        padding: 0;
+        width: 4.5rem;
+    }
+}
+
+.horizontal-scroller {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    & > div {
+        scroll-snap-align: start;
+        padding: 1rem;
+
+        h5 {
+            color: $primary;
+            margin-top: 0.5rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        p {
+            color: $gray-700;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .btn {
+            margin-top: 0.5rem;
+            padding: 0;
+            width: 4.5rem;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.scroll-toggler {
+    color: $accent;
+    padding: 0.75rem;
+}
+
+#subscription {
+    background: $gray-400;
+
+    h5 {
+        font-weight: bold;
+        color: $primary;
+    }
+
+    p {
+        color: $gray-800;
+    }
+}
+
+/* footer */
+footer {
+    color: white;
+    background: $primary;
+
+    h5 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    ul.footer-links {
+        border-left: 1px solid $accent;
+    }
+
+    li {
+        font-size: 0.75rem;
+        margin: 1rem 0.5rem;
+
+        i {
+            font-size: 1.25rem;
+        }
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+}
+
+/* media queries */
+@media only screen and (min-width: map-get($grid-breakpoints, md)) {
+    @import "./index_lg";
+}
+
+@media only screen and (max-width: (map-get($grid-breakpoints, md) - 1)) {
+    @import "./index_md";
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, sm)) {
+    @import "./index_sm";
+}

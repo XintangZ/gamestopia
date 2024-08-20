@@ -1,0 +1,46 @@
+/* specific styles for devices with width from md (768px inclusive) to lg breakpoint (992px non-inclusive) */
+
+header {
+    padding: 0 !important;
+
+    i {
+        font-size: 2rem;
+    }
+
+    #navbar-toggler {
+        padding-left: 0.75rem;
+    }
+
+    #search-bar {
+        order:3;
+        margin-top: 1rem;
+        background: $primary;
+    }
+
+    #header-btn-group {
+        padding-right: 0.75rem;
+    }
+}
+
+.heading-with-divider {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid $gray-400;
+
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+#navbar {
+    background-color: $primary;
+
+    ul {
+        text-align: left !important;
+
+        li {
+            margin: 0.5rem;
+            display: block;
+        }
+    }
+}

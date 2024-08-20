@@ -1,0 +1,302 @@
+/* reset browser default layout */
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* universal veriables */
+/* color palette */
+/* Bootstrap grey colors */
+/* font size */
+/* Bootstrap breakpionts for responsive design */
+/* styles applied to all pages */
+body {
+  min-width: 320px;
+  background: #e9ecef;
+}
+
+a {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+a:hover {
+  color: #0080FF !important;
+}
+
+/* header */
+header {
+  display: grid;
+  place-items: center;
+}
+header i {
+  color: #0080FF;
+  font-size: 2rem;
+}
+header .dropdown-menu {
+  border-radius: 2px;
+  padding: 0;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+/* navbar */
+nav i {
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+nav h5 {
+  color: #0080FF;
+  font-weight: bold;
+}
+nav #navbar .container-fluid {
+  background: #010C80;
+}
+nav #navbar li {
+  display: flex;
+  justify-content: center;
+}
+nav #navbar .nav-link {
+  color: white;
+}
+nav #subnav {
+  overflow-y: auto;
+  background-color: #010C80;
+  color: white;
+}
+nav #subnav ul {
+  text-align: left !important;
+}
+nav #subnav ul li {
+  margin: 0.5rem;
+}
+
+/* main */
+#main-carousel h5 {
+  text-shadow: 1px 1px black;
+}
+#main-carousel p {
+  font-size: 0.7rem;
+  text-shadow: 1px 1px black;
+}
+
+.heading-with-divider h4 {
+  color: #343a40;
+  font-weight: bold;
+}
+
+#draw {
+  background-color: #ced4da;
+}
+#draw h4 {
+  color: #0080FF;
+  font-weight: bold;
+}
+#draw #prize-info h5 {
+  color: #010C80;
+}
+#draw #prize-info p {
+  color: #495057;
+  font-size: 0.9rem;
+}
+#draw strong {
+  font-size: 2rem;
+  color: #010C80;
+}
+#draw #draw-info h5 {
+  color: #010C80;
+  font-size: 1.7rem;
+}
+#draw #draw-info p {
+  color: #0080FF;
+  font-size: 1.5rem;
+}
+#draw #draw-info p #countdown {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.img-container {
+  height: 10rem;
+  width: 7rem;
+  overflow: hidden;
+}
+.img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 10rem;
+}
+
+#allGames h5 {
+  color: #010C80;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#allGames p {
+  color: #495057;
+  font-size: 0.9rem;
+  text-align: center;
+}
+#allGames .btn {
+  margin-top: 0.5rem;
+  padding: 0;
+  width: 4.5rem;
+}
+
+.horizontal-scroller {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.horizontal-scroller > div {
+  scroll-snap-align: start;
+  padding: 1rem;
+}
+.horizontal-scroller > div h5 {
+  color: #010C80;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.horizontal-scroller > div p {
+  color: #495057;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.horizontal-scroller > div .btn {
+  margin-top: 0.5rem;
+  padding: 0;
+  width: 4.5rem;
+}
+.horizontal-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-toggler {
+  color: #0080FF;
+  padding: 0.75rem;
+}
+
+#subscription {
+  background: #ced4da;
+}
+#subscription h5 {
+  font-weight: bold;
+  color: #010C80;
+}
+#subscription p {
+  color: #343a40;
+}
+
+/* footer */
+footer {
+  color: white;
+  background: #010C80;
+}
+footer h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer ul.footer-links {
+  border-left: 1px solid #0080FF;
+}
+footer li {
+  font-size: 0.75rem;
+  margin: 1rem 0.5rem;
+}
+footer li i {
+  font-size: 1.25rem;
+}
+footer p {
+  font-size: 0.75rem;
+}
+
+/* media queries */
+@media only screen and (min-width: 768px) {
+  /* specific styles for devices with width greater than lg breakpoint (992px inclusive) */
+  .heading-with-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .heading-with-divider h4 {
+    margin: 0 1.5rem;
+    font-size: 1.25rem;
+  }
+  .heading-with-divider::before, .heading-with-divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ced4da;
+  }
+  #draw h4, #draw #draw-info {
+    padding-left: 1rem !important;
+  }
+  #subscription {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* specific styles for devices with width from md (768px inclusive) to lg breakpoint (992px non-inclusive) */
+  header {
+    padding: 0 !important;
+  }
+  header i {
+    font-size: 2rem;
+  }
+  header #navbar-toggler {
+    padding-left: 0.75rem;
+  }
+  header #search-bar {
+    order: 3;
+    margin-top: 1rem;
+    background: #010C80;
+  }
+  header #header-btn-group {
+    padding-right: 0.75rem;
+  }
+  .heading-with-divider {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #ced4da;
+  }
+  .heading-with-divider h4 {
+    font-size: 1rem;
+  }
+  #navbar {
+    background-color: #010C80;
+  }
+  #navbar ul {
+    text-align: left !important;
+  }
+  #navbar ul li {
+    margin: 0.5rem;
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /* specific styles for devices with width less than md breakpoint (768px non-inclusive) */
+  header i {
+    font-size: 1.5rem;
+  }
+  #navbar {
+    width: 100vw;
+  }
+  #subnav {
+    width: 100vw;
+  }
+  footer div.col-sm-3 {
+    padding-left: 1rem !important;
+  }
+}/*# sourceMappingURL=index.css.map */

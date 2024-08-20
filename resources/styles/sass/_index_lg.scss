@@ -1,0 +1,31 @@
+/* specific styles for devices with width greater than lg breakpoint (992px inclusive) */
+
+.heading-with-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+
+    h4 {
+        margin: 0 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid $gray-400;
+    }
+}
+
+#draw {
+    h4, #draw-info {
+        padding-left: 1rem !important;
+    }
+}
+
+#subscription {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}

@@ -1,0 +1,14 @@
+.game-img {
+  width: 125px;
+  height: 150px;
+  background-color: aqua;
+}
+
+.page-btn {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.br {
+  border-right: none;
+}/*# sourceMappingURL=all_games.css.map */

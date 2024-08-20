@@ -1,0 +1,33 @@
+/* styles applied to game detail page */
+@import "./reset";
+@import "./variables";
+
+@media screen and (min-width: "992px") {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.cardGame img:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: $accent;
+}
+
+.cardGame {
+  h5 {
+    margin: 5px;
+  }
+
+  p {
+    margin: 5px;
+  }
+}
+
+.cardGame h5:hover {
+  color: $accent;
+  cursor: pointer;
+}
